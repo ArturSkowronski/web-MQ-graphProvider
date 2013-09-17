@@ -4,6 +4,7 @@
     "dependencies": {
         "backbone-amd": "latest",
         "requirejs": "2.1.1",
-        "highcharts": "latest"
+        "highcharts": "latest",
+        "jquery": "latest"
     }
 }

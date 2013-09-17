@@ -2,12 +2,29 @@
   "name": "grunt-express-workflow",
   "version": "0.3.3",
   "private": true,
+  "main ":"server.js",
   "dependencies": {
     "express": "3.1.0",
     "jade": "~0.33.0",
-    "marked": "~0.2.9"
+    "marked": "~0.2.9",
+    "rabbitmq-nodejs-client" "*"
   },
   "engines": {
     "node": ">=0.8.0"
+  },
+   "devDependencies": {
+    "grunt": "latest",
+    "grunt-sass":"latest",
+    "grunt-reload": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-jade": "latest",
+    "grunt-concurrent": "latest",
+    "grunt-nodemon":"latest",
+    "grunt-contrib-coffee":"latest"
   }
+
 }
