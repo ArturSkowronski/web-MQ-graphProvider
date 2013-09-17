@@ -1,0 +1,9 @@
+{
+    "name":  "mq_data_eater",
+    "version": "0.0.1",
+    "dependencies": {
+        "backbone-amd": "latest",
+        "requirejs": "2.1.1",
+        "highcharts": "latest"
+    }
+}
