@@ -23,6 +23,7 @@ if (redisURL) {
 }
 
 app.get('/', function(req, res){
+    console.log("index");
     redis.get("foo", function(err, value) {
         console.log("redisZSerwera: "+value);
     });
