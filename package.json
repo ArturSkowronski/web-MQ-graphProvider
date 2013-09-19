@@ -1,20 +1,20 @@
 {
-  "name": "grunt-express-workflow",
+  "name": "node-MQ-graphProvider",
   "version": "0.3.3",
   "private": true,
-  "main ":"server.js",
+  "main ": "server.js",
   "dependencies": {
     "express": "3.1.0",
     "jade": "~0.33.0",
     "marked": "~0.2.9",
-    "rabbitmq-nodejs-client" "*"
+    "rabbitmq-nodejs-client": "*"
   },
   "engines": {
     "node": ">=0.8.0"
   },
-   "devDependencies": {
+  "devDependencies": {
     "grunt": "latest",
-    "grunt-sass":"latest",
+    "grunt-sass": "latest",
     "grunt-reload": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-jshint": "latest",
@@ -23,8 +23,11 @@
     "grunt-contrib-copy": "latest",
     "grunt-jade": "latest",
     "grunt-concurrent": "latest",
-    "grunt-nodemon":"latest",
-    "grunt-contrib-coffee":"latest"
+    "grunt-nodemon": "latest",
+    "grunt-contrib-coffee": "latest"
+  },
+  "subdomain": "Articles-node-MQ-graphProvider",
+  "scripts": {
+    "start": ""
   }
-
 }
