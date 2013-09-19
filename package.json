@@ -7,7 +7,7 @@
     "express": "3.1.0",
     "jade": "~0.33.0",
     "marked": "~0.2.9",
-    "rabbitmq-nodejs-client": "*"
+    "amqp":">= 0.1.0"
   },
   "engines": {
     "node": ">=0.8.0"
@@ -25,9 +25,5 @@
     "grunt-concurrent": "latest",
     "grunt-nodemon": "latest",
     "grunt-contrib-coffee": "latest"
-  },
-  "subdomain": "Articles-node-MQ-graphProvider",
-  "scripts": {
-    "start": ""
   }
 }
