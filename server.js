@@ -1,5 +1,4 @@
 var express=require("express");
-
 var app=express();
 
 app.configure(function(){
@@ -11,8 +10,7 @@ app.use("/public", express.static(__dirname + '/public'));
 
 app.get('/', function(req, res){
     res.render('index', {option: 'value'});
-});
-  
+});  
 
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
