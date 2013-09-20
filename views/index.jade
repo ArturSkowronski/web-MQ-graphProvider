@@ -4,13 +4,64 @@ html
     title
     link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootswatch/3.0.0/cosmo/bootstrap.min.css')
     link(rel='stylesheet', href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css")
-  body
+    script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/highcharts/3.0.2/highcharts.js')
+    script(src='/public/js/custom.js')
+
+    body
     div.navbar.navbar-inverse
       div.container
         div.navbar-header
         a.navbar-brand KLIENT DATASTORE
           i.icon-lightbulb.pull-left.icon-large
     div.container
+      div.row
+        div.col-sm-6.col-md-8
+          div.panel.panel-primary
+            div.panel-heading Wykres
+            div.panel-body
+              div#highcharts
+        div.col-sm-6.col-md-4
+          div.panel.panel-primary
+            div.panel-heading Formularz
+            div.panel-body
+              div.row
+                div.col-sm-6.col-md-5
+                  label Źródło Danych
+                div.col-sm-6.col-md-7
+                  select#datasrc
+                    option Urządzenie
+                    option Użytkownik
+              div.row
+                div.col-sm-6.col-md-5
+                  label Oś X
+                div.col-sm-6.col-md-7
+                  select#x_axis
+                    option Pogoda
+                    option Czas
+              div.row
+                div.col-sm-6.col-md-5
+                    label Oś Y
+                div.col-sm-6.col-md-7
+                    select#y_axis
+                      option Pogoda
+                      option Taryfa
+              div.row.hide
+                div.col-sm-6.col-md-4
+                  label Filtr
+                div.col-sm-6.col-md-8
+                  input(placeholder="Username").form-control#x_axis
+              div.row
+                p
+                p
+                  a.col-sm-6.col-md-12.btn.btn-success#generate_chart Pokaż wykres
+        div.row
+        div.col-sm-6.col-md-12
+          div.panel.panel-primary
+            div.panel-heading Opis
+            div.panel-body
+              div.alert.alert-success Link do pomiaru:&nbsp;
+                a.alert-link#rest_link
 
 
     

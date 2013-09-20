@@ -30,6 +30,15 @@ app.get('/', function(req, res){
     res.render('index', {option: 'value'});
 });
 
+app.get('/rest', function(req, res){
+    console.log("index");
+    redis.get("foo", function(err, value) {
+        console.log("redisZSerwera: "+value);
+    });
+    res.render('index', {option: 'value'});
+});
+
+
 
 
 var port = process.env.PORT || 5000;
