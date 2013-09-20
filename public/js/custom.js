@@ -12,7 +12,7 @@ $(document).ready(function() {
      var CustomType= 'column';
     // First chart initialization
     if(WSerror){
-   //     confirm("Problem z uruchomieniem Websockets - (Firewall?). Uruchomić symulacje?")
+       confirm("Problem z uruchomieniem Websockets - (Firewall?). Uruchomić symulacje?")
     }
     function ChangeChartType(title, xAxisData,xAxisTitle,yAxisData, yAxisTitle,type) {
 
