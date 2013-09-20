@@ -30,7 +30,7 @@ app.get('/', function(req, res){
     res.render('index', {option: 'value'});
 });
 
-app.get('/rest', function(req, res){
+app.get('/rest/:id/:id2/:id3', function(req, res){
     console.log("index");
     redis.get("foo", function(err, value) {
         console.log("redisZSerwera: "+value);
